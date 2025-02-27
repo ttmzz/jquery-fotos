@@ -7,69 +7,90 @@
 }
 
 body {
-    background-color: antiquewhite;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-}
-
-main {
-  max-height: 1280px;
-  height: 100%;
-  margin: 16%;
-  }
-
-h1 {
-    color: rgb(86, 86, 86);
-    font-size: xx-large;
-    text-align: center;
-    margin-bottom: 25px;
-    display: block;
+    background: #e8eff5 url('noise.png');
+    color: rgb(26, 26, 26);
+    font-family: "Montaga", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    max-height: 1280px; 
+    height: 100vh;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
+/* Define a altura a e largura do container e mantém o campo adicionar contato em sua respectiva posição*/
 
-.container input , button{
-    padding: 2px;
-    margin: 5px auto;
-    display: block;
+.container {
+    max-width: 960px;
+    width: 40%;
     text-align: center;
+    margin-bottom: 100px;
+    padding-bottom: 300px;
+    height: 400px;
 }
 
-.Campos {
-  width: 10rem;
-  border:  rgb(119, 229, 119) solid 1px;
+.tabela {
+    width: 100%;
+    font-style: italic;
+    letter-spacing: 0.2px;
+}
+
+/* Adiciona uma linha embaixo do contato*/
+.tabela td {
+    padding: 8px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#contact {
+   font-size: 1.8rem;
+   align-items: center;
+   margin-bottom: 5px;
+   
+}
+
+span {
+  margin-right: 130px;
+  margin-left: 125px;
+}
+
+tr td{
+    width: 304px;
+}
+
+hr {
+    border: solid 1px rgb(21, 21, 21);
+}
+ #formulario {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+input {
+    border: none;
+    border-bottom: solid 1px;
 }
 
 .btn {
-    width: 7rem;
-    background-color:rgb(119, 229, 119);
-    border:  rgb(119, 229, 119) solid 1px;
-    color: #fff;
-    margin-bottom: 17.5px;
-    cursor: pointer;
+  background: #34d98f;
+  border-radius: 28px;
+  box-shadow: 0px 1px 3px #666666;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  cursor: pointer;
 }
 
 .btn:hover {
-    background-color: rgb(132, 255, 132);
-    border: rgb(132, 255, 132) solid 1px;
-}
+    background: #39f39f;
+    color: rgb(255, 243, 243);
+    box-shadow: none;
+  }
 
-.success-msg , .error-msg{
-  text-align: center;
-  margin: auto;
-  padding-top: 0.3rem;
-  width: 12rem;
-  height: 2rem;
-  letter-spacing: 1px;
-  color: aliceblue;
-  font-weight: 800;
-  font-size: 1rem;
-  display: none;
-}
-
-.success-msg {
-  background-color: rgb(0, 255, 0);
-}
-.error-msg {
-    background-color: red;
-}

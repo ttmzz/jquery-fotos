@@ -1,22 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculos</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main class="container">
-        <h1>Formulário</h1>
-        <form id="comparar">
-            <input id="A" class="Campos" type="number" name="A" placeholder="Campo A" required>
-            <input id="B" class="Campos" type="number" name="B" placeholder="Campo B" required>
-            <button class="btn" type="submit">Play</button>
-            <p class="success-msg"></p>
-            <p class="error-msg"></p>
+    <div class="container">
+        <form id="formulario">
+            <div class="CNome">
+                <label>Nome:</label>
+                <input class="nome" type="text" name="nome" placeholder="Nome Completo" required>
+            </div>
+            <div class="CTel">
+                <label>Telefone:</label>
+                <input class="tel" type="tel" name="telefone" placeholder="Telefone/Celular" required>
+            </div>
+            <button class="btn">Cadastrar +</button>
         </form>
-    </main>
-    <script src="./index.js"></script>
+
+        <table class="tabela">
+            <tbody>
+                <div id="contact">Contato</div>
+                <hr>
+              <tr>
+                 <span>Nome:</span> 
+                 <td>----</td>
+                 <span>Telefone:</span>  
+                 <td>----</td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="index.js"></script>
 </body>
 </html>

@@ -1,42 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenda de Contatos</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
+    <title>JQuery</title>
 </head>
 <body>
-    <div class="container">
-        <form id="formulario">
-            <div class="CNome">
-                <label>Nome:</label>
-                <input class="nome" type="text" name="nome" placeholder="Nome Completo" required>
-            </div>
-            <div class="CTel">
-                <label>Telefone:</label>
-                <input class="tel" type="tel" name="telefone" placeholder="Telefone/Celular" required>
-            </div>
-            <button class="btn">Cadastrar +</button>
-        </form>
+    <header>
+        <h1>Galeria de fotos</h1>
+        <button type="button">Nova imagem +</button>
+    </header>
+    <form>
+        <h2>Inserir nova imagem</h2>
+        <input type="url" id="endereco-imagem-nova" required placeholder="URL da imagem">
+        <button type="submit">Adicionar</button>
+        <button type="reset" id="cancelar-button">Cancelar</button>
+    </form>
 
-        <table class="tabela">
-            <tbody>
-                <div id="contact">Contato</div>
-                <hr>
-              <tr>
-                 <span>Nome:</span> 
-                 <td>----</td>
-                 <span>Telefone:</span>  
-                 <td>----</td>
-              </tr>
-            </tbody>
-        </table>
-    </div>
-    
-    <script src="index.js"></script>
+    <ul>
+        <li>
+            <img src="./images/foto1.jpg" alt="Pintura de um gato">
+            <div class="overlay-imagem-link">
+                <a href="./images/foto1.jpg" title="Ver imagem em tamanho real" target="_blank">Ver Imagem em tamanho real</a>
+            </div>
+        </li>
+        <li>
+            <img src="./images/foto2.jpg" alt="Pintura de um gato">
+            <div class="overlay-imagem-link">
+                <a href="./images/foto2.jpg" title="Ver imagem em tamanho real" target="_blank">Ver Imagem em tamanho real</a>
+            </div>
+        </li>
+        <li>
+            <img src="./images/foto3.jpg" alt="Pintura de um gato">
+            <div class="overlay-imagem-link">
+                <a href="./images/foto3.jpg" title="Ver imagem em tamanho real" target="_blank">Ver Imagem em tamanho real</a>
+            </div>
+        </li>
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

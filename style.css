@@ -85,3 +85,14 @@ ul li img {
 ul li:hover .overlay-imagem-link {
   opacity: 1;   
 }
+
+@media(max-width: 750px) {
+  form {
+    text-align: start;
+  }
+
+  header {
+    font-size: 0.7rem;
+  }
+  
+}
